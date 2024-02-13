@@ -1,9 +1,12 @@
 # spacelift-tailscale Terraform Module
 
-Terraform module that manages [Spacelift][] resources to enable [spacelift-tailscale] to function.
+Terraform module that manages [Spacelift][] resources to enable [caius/spacelift-tailscale][] to function, allowing access from Spacelift to infrastructure inside your [Tailscale][] tailnet.
+
+See [caius/spacelift-tailscale] for more information.
 
 [Spacelift]: https://spacelift.io/
-[spacelift-tailscale]: https://github.com/caius/spacelift-tailscale/
+[caius/spacelift-tailscale]: https://github.com/caius/spacelift-tailscale/
+[Tailscale]: https://tailscale.com/
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
