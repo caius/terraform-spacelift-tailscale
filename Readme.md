@@ -15,7 +15,9 @@ Terraform module that manages [Spacelift][] resources to enable [spacelift-tails
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| spacelift | >= 1.0 |
 
 ## Modules
 
@@ -23,11 +25,16 @@ No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [spacelift_context.spacelift-tailscale-runtime](https://registry.terraform.io/providers/spacelift-io/spacelift/latest/docs/resources/context) | resource |
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| context\_labels | List of labels for the Spacelift Context. eg. ["autoattach:runtime:spacelift-tailscale"] | `list(string)` | n/a | yes |
+| space\_id | The ID of the Spacelift Space to create the resources inside | `any` | n/a | yes |
 
 ## Outputs
 
