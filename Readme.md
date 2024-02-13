@@ -8,7 +8,10 @@ Terraform module that manages [Spacelift][] resources to enable [spacelift-tails
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| terraform | >= 1.0 |
+| spacelift | >= 1.0 |
 
 ## Providers
 
