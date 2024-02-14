@@ -8,14 +8,15 @@ terraform {
 
 provider "spacelift" {}
 
-data "spacelift_space" "root" {
-  space_id = "root"
+resource "spacelift_space" "this" {
+  name            = "examples-simple-this"
+  parent_space_id = "root"
 }
 
 module "spacetail" {
   source = "../../"
 
-  space_id = data.spacelift_space.root.id
+  space_id = spacelift_space.this.id
   context_labels = [
     "autoattach:runtime:spacelift-tailscale",
     "terraform:true",
