@@ -1,0 +1,7 @@
+version: "1"
+module_version: "0.0.1"
+runner_image: "ghcr.io/caius/spacelift-tailscale:latest"
+
+tests:
+  - name: "Simple"
+    project_root: "examples/simple"
